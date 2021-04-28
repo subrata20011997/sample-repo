@@ -5,8 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Web App</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <label for="comment">
+        Comment : <input type="text" id="comment" name="comment">
+    </label>
+    <input type="submit" value="Display Comment" onclick="displayComment()">
+    <div class="comment-card">
+        <div class="card-header">Comment : </div>
+        <div class="card-body" >
+           <span id="display"></span>
+        </div>
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
